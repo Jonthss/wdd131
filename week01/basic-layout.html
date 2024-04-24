@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+
+        /* Header */
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+
+        /* Navigation Menu */
+        nav {
+        position: relative;
+        width: 100%;
+        display: flex;
+        background-color: black;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 20px;
+        }
+
+        .left {
+        float: left;
+        margin-right: auto;
+        }
+
+        .right {
+        position: absolute;
+        right: 0;
+        float: right;
+        margin-left: auto;
+        }
+        
+
+        nav a {
+            display: block;
+            color: #eee;
+            padding: 0.75rem;
+            text-decoration: none;
+            text-align: center;
+            flex: 1 1 auto;
+        }
+
+        nav a:hover {
+            font-weight: 700;
+            text-decoration: underline;
+            text-decoration-color: yellow;
+        }
+
+        /* Main Content */
+        main {
+            padding: 20px;
+            width: 70%;
+            float: left;
+            height: 200px;
+            overflow: auto; 
+        }
+
+        /* Sidebar */
+        aside {
+            background-color: #f1f1f1;
+            padding: 20px;
+            width: 30%;
+            float: left;
+            height: 200px; 
+            overflow: auto; 
+        }
+
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: white;
+            clear: both;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Header Content</h1>
+    </header>
+
+    <nav>
+        <a href="#" title="Home">Home</a>
+        <a href="#" title="Projects">Projects</a>
+        <a href="#" title="Services">Services</a>
+        <a href="#" title="Contact Us">Contact Us</a>
+    </nav>
+
+    <main>
+        <h2>Main Content</h2>
+        
+    </main>
+
+    <aside>
+        <h3>Aside Content</h3>
+        
+    </aside>
+
+    <footer>
+        <h4>Footer Content</h4>
+    </footer>
+</body>
+</html>
