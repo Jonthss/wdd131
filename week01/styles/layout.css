@@ -1,0 +1,74 @@
+/* Estilos para o layout */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Navigation Menu */
+nav {
+    position: relative;
+    width: 100%;
+    display: flex;
+    background-color: black;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+nav a {
+    display: block;
+    color: #eee;
+    padding: 0.75rem;
+    text-decoration: none;
+    text-align: center;
+    flex: 1 1 auto;
+}
+
+nav a:hover {
+    font-weight: 700;
+    text-decoration: underline;
+    text-decoration-color: yellow;
+}
+
+/* Main Content */
+main {
+    padding: 20px;
+    width: 70%;
+    float: left;
+    height: 200px;
+    overflow: auto; 
+}
+
+/* Sidebar */
+aside {
+    background-color: #f1f1f1;
+    padding: 20px;
+    width: 30%;
+    float: left;
+    height: 200px; 
+    overflow: auto; 
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    clear: both;
+    padding: 10px;
+    text-align: center;
+}
