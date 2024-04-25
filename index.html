@@ -5,6 +5,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WDD 131 - Dynamic Web Fundamentals - Jonathas Oliveira</title>
     <link rel="stylesheet" href="styles/base.css">
+    <style>
+        /* Estilos para o layout */
+
+        /* Flexbox para alinhar o conteúdo dos cartões */
+        .card .content {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        /* Estilos para os títulos e parágrafos nas colunas */
+        .left, .right {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center; /* Centraliza o texto */
+        }
+
+        /* Estilos para os títulos */
+        .left h2, .right h2 {
+            font-size: 24px;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        /* Estilos para os parágrafos */
+        .left p, .right p {
+            font-size: 16px;
+            color: #666;
+        }
+
+        /* Adiciona divisão entre os títulos */
+        .divider {
+            width: 100%;
+            border-bottom: 1px solid #ccc;
+            margin: 20px 0;
+        }
+
+        /* CSS Adicional */
+        @media screen and (max-width: 768px) {
+            /* Ajustes para dispositivos menores */
+            .card .content {
+                flex-direction: column;
+            }
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -22,19 +69,20 @@
             <div class="content">
                 <div class="left">
                     <h2>About Me</h2>
-                    <p>Meu nome é Jonathas Barbosa de Oliveira. Eu nasci na cidade de João Pessoa no estado da Paraíba no Brasil!</p>
+                    <p>Meu nome é Jonathas Barbosa de Oliveira e eu nasci na bela cidade de João Pessoa, localizada no estado da Paraíba, no maravilhoso país do Brasil! Desde que me lembro, as cores vibrantes e os sons animados dessa região têm feito parte da minha vida. João Pessoa, a terceira cidade mais antiga do Brasil, com suas praias deslumbrantes e seu povo acolhedor, sempre teve um lugar especial no meu coração. Nascido sob o calor do sol nordestino e embalado pela brisa do mar, trago comigo as raízes e a cultura dessa terra tão rica e diversificada.</p>
                 </div>
                 <div class="right">
-                    <img src="images\jonathas.jpg" alt="Jonathas Oliveira">
+                    <img src="images/jonathas.jpg" alt="Jonathas Oliveira">
                 </div>
             </div>
+            <div class="divider"></div> 
             <div class="content">
                 <div class="left">
-                    <img src="images\joao-pessoa.webp" alt="Paraíba">
+                    <img src="images/joao-pessoa.webp" alt="Paraíba">
                 </div>
                 <div class="right">
                     <h2>About Paraíba, Brazil</h2>
-                    <p>Paraíba é o estado...</p>
+                    <p>A Paraíba é o estado que exalta suas praias como um verdadeiro tesouro natural. Com uma extensa faixa litorânea, repleta de enseadas paradisíacas e falésias coloridas, é um destino que atrai visitantes de todos os cantos em busca de sol, mar e muita diversão. Suas praias são verdadeiros cartões-postais, onde o azul do oceano se encontra com o verde da vegetação tropical, criando cenários deslumbrantes. Desde as praias mais movimentadas até as mais tranquilas e intocadas, a Paraíba oferece uma variedade incrível de opções para quem deseja desfrutar da natureza e relaxar à beira-mar.</p>
                 </div>
             </div>
         </section>
