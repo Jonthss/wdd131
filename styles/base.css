@@ -1,0 +1,89 @@
+/* Estilos para o layout */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-color: #333;
+    color: white;
+    padding: 0px 0; /* Remover padding horizontal */
+    text-align: center;
+}
+
+/* Navigation Menu */
+nav {
+    position: relative;
+    width: 100%;
+    display: flex;
+    background-color: black;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0;
+}
+
+nav a {
+    display: block;
+    color: #eee;
+    padding: 10px 50px;
+    text-decoration: none;
+    text-align: center;
+}
+
+nav a:hover {
+    font-weight: 700;
+    text-decoration: underline;
+    text-decoration-color: yellow;
+}
+
+/* Main Content */
+main {
+    padding: 20px;
+    width: 70%;
+    float: left;
+    height: 200px;
+    overflow: auto;
+}
+
+/* Sidebar */
+aside {
+    background-color: #f1f1f1;
+    padding: 20px;
+    width: 30%;
+    float: left;
+    height: 200px;
+    overflow: auto;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    clear: both;
+    padding: 10px;
+    text-align: center;
+}
+
+.image {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 200px; /* Adjust the height to match your images */
+}
+
+.overlay {
+    background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent white background color */
+    padding: 20px;
+}
+
+.overlay h2 {
+    margin-bottom: 10px;
+}
