@@ -18,29 +18,22 @@
     </header>
 
     <main>
-        <section class="card image" id="main-content-1" style="background-image: url('images\foto.jpg')">
-            <div class="overlay">
-                <h2>Main Content Section 1</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor, magna a volutpat eleifend, tellus nisi volutpat dolor, eu volutpat dui velit eget nisl. Sed auctor, magna a volutpat eleifend, tellus nisi volutpat dolor, eu volutpat dui velit eget nisl.</p>
-            </div>
+        <section class="card">
+            <h2>About Me</h2>
+            <p>Meu nome é Jonathas Barbosa de Oliveira. Eu nasci na cidade de João Pessoa no estado da Paraíba no Braisl!</p>
+            <h2>About Paraíba,Brasil</h2>
+            <p>Paraíba é o estado...</p>
         </section>
     
-        <section class="card image" id="main-content-2" style="background-image: url('images/foto2.png')">
-            <div class="overlay">
-                <h2>Main Content Section 2</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor, magna a volutpat eleifend, tellus nisi volutpat dolor, eu volutpat dui velit eget nisl. Sed auctor, magna a volutpat eleifend, tellus nisi volutpat dolor, eu volutpat dui velit eget nisl.</p>
-            </div>
+        <section class="card">
+            <h2>Web Dev Resources</h2>
+            <ul>
+                <li><a href="#">Resource Link 4</a></li>
+                <li><a href="#">Resource Link 5</a></li>
+                <li><a href="#">Resource Link 6</a></li>
+            </ul>
         </section>
     </main>
-
-    <aside>
-        <h3>Aside Content</h3>
-        <ul>
-            <li><a href="#">Resource Link 1</a></li>
-            <li><a href="#">Resource Link 2</a></li>
-            <li><a href="#">Resource Link 3</a></li>
-        </ul>
-    </aside>
 
     <footer>
         <p>
@@ -49,6 +42,7 @@
         <p id="lastModified"></p>
     </footer>
 
+    <script src="getdates.js" defer></script>
     <script>
         // Populando o ano atual
         document.getElementById('currentyear').textContent = new Date().getFullYear();
