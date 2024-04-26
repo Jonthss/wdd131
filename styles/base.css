@@ -135,3 +135,36 @@ footer {
     max-height: 350px;
     border-radius: 10px;
 }
+
+.image-carousel {
+    position: relative;
+    width: 100%;
+}
+
+.carousel-image {
+    display: none;
+    max-width: 100%; /* Garante que as imagens mantenham sua proporção */
+    height: auto; /* Mantém a proporção da imagem */
+}
+
+.carousel-image.active {
+    display: block;
+}
+
+.prev, .next {
+    position: absolute;
+    top: 53%;
+    transform: translateY(-50%);
+    font-size: 40px;
+    cursor: pointer;
+    z-index: 1;
+    color: #001736;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
