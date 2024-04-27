@@ -7,57 +7,6 @@
     <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Jonathas Oliveira, Keyword summary of page content">
     <meta name="author" content="Jonathas Oliveira">
     <link rel="stylesheet" href="styles/base.css">
-    <style>
-        /* Estilos para o layout */
-
-        @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
-
-        /* Aplica a fonte Oswald ao corpo do documento */
-        body {
-            font-family: 'Oswald', sans-serif;
-        }
-
-        /* Flexbox para alinhar o conteúdo dos cartões */
-        .card .content {
-            display: flex;
-            justify-content: space-around;
-            flex-wrap: wrap;
-        }
-
-        /* Estilos para os títulos e parágrafos nas colunas */
-        .left, .right {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center; /* Centraliza o texto */
-        }
-
-        /* Estilos para os títulos */
-        .left h2, .right h2 {
-            background-color: #ffc54a;
-            font-size: 44px;
-            color: #001736;
-            margin-bottom: 10px;
-        }
-
-        /* Estilos para os parágrafos */
-        .left p, .right p {
-            font-size: 16px;
-            color: #666;
-        }
-
-        
-
-        /* Adiciona divisão entre os títulos */
-        .divider {
-            width: 100%;
-            border-bottom: 2px solid #ccc;
-            margin: 20px 0;
-        }
-
-       
-    </style>
 </head>
 <body>
     <header>
@@ -119,32 +68,6 @@
         <p id="lastModified"></p>
     </footer>
 
-    <script src="getdates.js" defer></script>
-    <script>
-        // Populando o ano atual
-        document.getElementById('currentyear').textContent = new Date().getFullYear();
-
-        // Populando a última modificação
-        document.getElementById('lastModified').textContent = 'Last modified: ' + new Date(document.lastModified).toLocaleString();
-
-        let slideIndex = 1;
-        showSlides(slideIndex);
-
-        function changeSlide(n) {
-            showSlides(slideIndex += n);
-        }
-
-        function showSlides(n) {
-            let i;
-            const slides = document.getElementsByClassName("carousel-image");
-            if (n > slides.length) {slideIndex = 1}    
-            if (n < 1) {slideIndex = slides.length}
-            for (i = 0; i < slides.length; i++) {
-                slides[i].classList.remove('active');
-            }
-            slides[slideIndex-1].classList.add('active');
-        }
-
-    </script>
+    <script src="scripts/getdates.js" defer></script>
 </body>
 </html>
