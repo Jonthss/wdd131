@@ -1,25 +1,57 @@
-@media  screen and (min-width: 520px) {
-    #menu {
-        display: none;
+/*Large view*/
+@media (min-width: 37.5em) {
+
+    .container {
+      padding: 0px 10px;
     }
-
-
-    nav {
-        display: flex;
-        position: initial;
-        justify-content: center;
-        margin: auto;
-        width: 80%;
-        flex-direction: row;
+  
+    header h1 {
+      font-size: 16px;
     }
-
-    nav a {
-        display: block;
-        /* flex: 1 1 100%; */
+  
+    main .container .temples h2 {
+      font-size: 16px;
     }
-
-    nav a.active {
-        color: #ff3232;
+  
+    header .nav-items {
+      display: flex;
+      flex-direction: row;
+      background-color: #0d479a;
     }
-
-}
+  
+    header .navbar .title-hamburger {
+      box-shadow: none;
+    }
+  
+    header .nav-items.open {
+      display: flex;
+      flex-direction: row;
+    }
+  
+    header .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0px 20px;
+  
+    }
+  
+    header .navbar .hamburger {
+      display: none;
+    }
+  
+    header .nav-items li {
+      display: flex;
+    }
+  
+    main .container .temples .images-temples {
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  
+    }
+  
+    main .container .temples .images-temples img {
+      width: 300px;
+    }
+  
+  
+  }

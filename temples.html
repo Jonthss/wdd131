@@ -1,76 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 131 - Temple Album</title>
-    <meta name="description" content="A temple album page with selections of temple pictures">
-    <meta name="author" content="Jonathas Barbosa de Olivera">
-    <link rel="stylesheet" href="styles/temples.css">
-    <link rel="stylesheet" href="styles/temples-large.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300;1,400&display=swap" rel="stylesheet">
-    <script src="scripts/temples.js" defer></script>
-    <script src="scripts/getdates.js" defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WDD 131 - Picture Album</title>
+  <meta name="description"
+    content="WDD 131 - Dynamic Web Fundamentals, Jonathas Oliveira, Picture Album of Temples, WDD-131">
+  <meta name="author" content="Jonathas Barbosa de Oliveira">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles/temples.css">
+  <link rel="stylesheet" href="styles/temples-large.css">
+  <script defer src="scripts/temples.js"></script>
 </head>
+
 <body>
-    <header>
-        <h1>Temple Album</h1>
-        <nav>
-            <a href="">Home</a>
-            <a href="">Old</a>
-            <a href="">New</a>
-            <a href="">Large</a>
-            <a href="">Small</a>
-        </nav>
-        <button id="menu"></button>
-    </header>
-    <main>
-        <h2 id="selection">Home</h2>
-        <div id="gallery">
-            <figure>
-                <img src="images\teresina.jpg" alt="Tersina Temple" class="flag">
-                <figcaption>Temple</figcaption> 
-            </figure>
-            <figure>
-                <img src="images\teresina.jpg" alt="Tersina Temple" class="flag">
-            <figcaption>Temple</figcaption> 
-            </figure>
-            <figure>
-                <img src="images\teresina.jpg" alt="Tersina Temple" class="flag">
-            <figcaption>Temple</figcaption> 
-            </figure>
-            <figure>
-                <img src="images\teresina.jpg" alt="Tersina Temple" class="flag">
-            <figcaption>Temple</figcaption> 
-            </figure>
-            <figure>
-                <img src="images\teresina.jpg" alt="Tersina Temple" class="flag">
-            <figcaption>Temple</figcaption> 
-            </figure>
-            <figure>
-                <img src="images\teresina.jpg" alt="Tersina Temple" class="flag">
-            <figcaption>Temple</figcaption> 
-            </figure>
-            <figure>
-                <img src="images\teresina.jpg" alt="Tersina Temple" class="flag">
-            <figcaption>Temple</figcaption> 
-            </figure>
-            <figure>
-                <img src="images\teresina.jpg" alt="Tersina Temple" class="flag">
-            <figcaption>Temple</figcaption> 
-            </figure>
-            <figure>
-                <img src="images\teresina.jpg" alt="Tersina Temple" class="flag">
-            <figcaption>Temple</figcaption> 
-            </figure>
+  <header>
+    <div class="container">
+      <div class="navbar">
+        <div class="title-hamburger">
+          <h1>Temple Album</h1>
+          <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+
         </div>
-        
-    </main>
-    <footer>
-        <p>&copy;<span id="currentyear"></span> | Jonathas B. Oliveira | Campina Grande - PB, Brazil</p>
-        <p id="lastModified"></p>
-    </footer>
+
+        <nav class="navigation">
+          <ul class="nav-items">
+            <li><a href="#" title="Home">Home</a></li>
+            <li><a href="#" title="Old" class="active">Old</a></li>
+            <li><a href="#" title="New">New</a></li>
+            <li><a href="#" title="Large">Large</a></li>
+            <li><a href="#" title="Small">Small</a></li>
+          </ul>
+
+        </nav>
+      </div>
+    </div>
+
+
+  </header>
+  <main>
+    <div class="container">
+      <section class="temples">
+        <h2>Home</h2>
+        <div class="images-temples">
+          <figure>
+            <img src="images\teresina.jpg" alt="Temple of Teresina" width="300">
+            <figcaption>Temple of Teresina</figcaption>
+          </figure>
+          <figure>
+            <img src="images\teresina.jpg" alt="Temple of Teresina" width="300">
+            <figcaption>Temple of Teresina</figcaption>
+          </figure>
+          <figure>
+            <img src="images\teresina.jpg" alt="Temple of Teresina" width="300">
+            <figcaption>Temple of Teresina</figcaption>
+          </figure>
+          <figure>
+            <img src="images\teresina.jpg" alt="Temple of Teresina" width="300">
+            <figcaption>Temple of Teresina</figcaption>
+          </figure>
+          <figure>
+            <img src="images\teresina.jpg" alt="Temple of Teresina" width="300">
+            <figcaption>Temple of Teresina</figcaption>
+          </figure>
+          <figure>
+            <img src="images\teresina.jpg" alt="Temple of Teresina" width="300">
+            <figcaption>Temple of Teresina</figcaption>
+          </figure>
+          <figure>
+            <img src="images\teresina.jpg" alt="Temple of Teresina" width="300">
+            <figcaption>Temple of Teresina</figcaption>
+          </figure>
+          <figure>
+            <img src="images\teresina.jpg" alt="Temple of Teresina" width="300">
+            <figcaption>Temple of Teresina</figcaption>
+          </figure>
+          <figure>
+            <img src="images\teresina.jpg" alt="Temple of Teresina" width="300">
+            <figcaption>Temple of Teresina</figcaption>
+          </figure>
+        </div>
+      </section>
+    </div>
+
+
+
+  </main>
+  <footer>
+    <p>&copy; <span id="currentyear"></span> | Jonathas Barbosa de Oliveira | Brasil</p>
+    <p id="lastModified"></p>
+
+  </footer>
+
 </body>
+
 </html>
