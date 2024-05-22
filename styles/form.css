@@ -5,36 +5,65 @@ body {
     min-width: 380px;
     justify-content: center;
     font-family: "Reddit Sans", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f9fc;
 }
+
 header {
     text-align: center;
-    background-color: purple;
+    background-color: #0077b6;
     color: white;
-    margin-bottom: .5rem;
+    padding: 1rem 0;
+    margin-bottom: 1rem;
 }
-#review-header {
-    font-size: 1.5rem;
-}
+
 main {
-    font-size: .85rem;
-}
-.pform {
-    display: block;
-    margin: 0 auto;
-    background-color: rgb(232, 166, 232);
+    font-size: 1rem;
     padding: 1rem;
 }
-.pform input {
-    padding: 0;
+
+.pform {
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-.pform input:required,
-.pform select:required {
-    border:solid 2px red;
+
+.form-group {
+    margin-bottom: 1.5rem;
 }
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+    color: #0077b6;
+}
+
+.pform input,
+.pform select,
+.pform textarea {
+    width: 100%;
+    padding: 0.75rem;
+    margin-top: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    box-sizing: border-box;
+    background-color: #f0f0f0;
+}
+
 .pform input:required:valid,
 .pform select:required:valid {
-    border:solid 2px green;
+    border-color: green;
 }
+
+.pform input:required:invalid,
+.pform select:required:invalid {
+    border-color: red;
+}
+
 .rating-label {
     float: left;
     padding: 0 1em;
@@ -42,78 +71,38 @@ main {
     text-align: center;
 }
 
-.pform input[type="checkbox"],
-.pform input[type="date"],
-.pform input[type="text"],
-.pform input[type="submit"],
-#review-box {
-    display: inline-block;  
-}
-.pform input[type="radio"],
-.pform input[type="checkbox"] {
-    padding: .75rem;
-}
-
-.pform input[type="date"],
-.pform input[type="text"],
-select,
-#review-box {
-    width: 100%;
-    max-width: 400px;
-    text-align: center;
-    padding-top: 10px;
-}
-select {
-    padding: 5px;
-    text-align: left;
-}
-input[type="checkbox"] {
-   width: 16px;
-   height: 16px;
-   vertical-align: bottom;
-}
-
-.pform input[type="date"] {
-    padding-top: 5px;
-    padding-bottom: 5px;
-    padding-left: 3px;
-    text-align:left;
-}
-#review-box {
-    padding: 5px;
-    padding-bottom: 50px;
-    text-align: left;
-}
-
-.pform input[type="text"] {
-    padding-top: 5px;
-    padding-bottom: 5px;
-    padding-left: 3px;
-    text-align:left;
-}
-/* ul {
-    list-style: none;
-    margin-top: 0;
-    margin-bottom: 0;
-    padding-left: 0;
-} */
-
-.title {
-    padding-top: 1.2rem;
-}
-.pform input[type="submit"] {
-    display: block;
-    margin-top: 1rem;
-    width: 100%;
-    padding-top: 8px;
-    padding-bottom: 8px;
+.rating-label span {
     font-size: 1.5rem;
-    border-radius: 3px;
-    border: solid 1px black;
+    color: #ffb703;
 }
+
+.pform input[type="checkbox"] {
+    width: auto;
+    margin-right: 0.5rem;
+}
+
+.pform input[type="submit"] {
+    background-color: #0077b6;
+    color: white;
+    border: none;
+    font-size: 1.25rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border-radius: 4px;
+}
+
+.pform input[type="submit"]:hover {
+    background-color: #005f8a;
+}
+
 footer {
-    background-color: purple;
+    background-color: #0077b6;
     color: white;
     text-align: center;
-    margin-top: .5rem;
+    padding: 1rem 0;
+    margin-top: 1rem;
+}
+
+footer p {
+    margin: 0;
 }

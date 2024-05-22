@@ -5,12 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Product Review Form - WDD 131</title>
     <meta name="description" content="My form page for Week 5 of WDD 131">
-    <meta name="author" content="Dylan Stephenson">
+    <meta name="author" content="Jonathas Oliveira">
     <link rel="stylesheet" href="styles/form.css">
     <script src="scripts/form.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Reddit+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Reddit+Sans:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -18,39 +18,62 @@
     </header>
     <main>
         <form method="get" action="review.html" class="pform">
-            <div>Product Name</div>
-            <select aria-label="select"id="product-name" name="Product Name" required>
-                <option value="" selected disabled>Select a Product ...</option>
-            </select>
-            <div class="title">Overall Rating (required)</div>
-            <label class="rating-label">⭐<br /><input aria-label="input" id="1star" type="radio" name="rating" required></label>
-            <label class="rating-label">⭐⭐<br /><input aria-label="input" id="2star" type="radio" name="rating" required></label>
-            <label class="rating-label">⭐⭐⭐<br /><input aria-label="input" id="3star" type="radio" name="rating" required></label>
-            <label class="rating-label">⭐⭐⭐⭐<br /><input aria-label="input" id="4star" type="radio" name="rating" required></label>
-            <label class="rating-label">⭐⭐⭐⭐⭐<br /><input aria-label="input" id="5star" type="radio" name="rating" required></label>
-            <div id="install-date">Date of Installation</div>
-            <label><input aria-label="input" type="date" name="installation" required></label>
-            <div class="title">Which features did you find useful in this product?</div>
-            <div>(<i>Check all that apply</i>)</div>
-            <label class="checkbox-label"><input aria-label="input" type="checkbox" id="durability" name="Durability" value="yes"> Durability<br></label>
-            <label class="checkbox-label"><input aria-label="input" type="checkbox" id="ease-use" name="Ease of Use" value="yes"> Ease of Use<br></label>
-            <label class="checkbox-label"><input aria-label="input" type="checkbox" id="performance" name="Performance" value="yes"> Performance<br></label>
-            <label class="checkbox-label"><input aria-label="input" type="checkbox" id="design" name="Design" value="yes"> Design<br></label>
-            <div class="title">Written Review (<i>optional</i>)</div>
-            <textarea aria-label="text area" id="review-box" name="Written Review"></textarea>
-            <div class="title">Your Name (<i>optional</i>)</div>
-            <input aria-label="input" type="text" id="name-input" name="your name">
-            <input aria-label="input" type="submit" id="submit-button" value="Leave Review">
+            <div class="form-group">
+                <label for="product-name">Product Name</label>
+                <select id="product-name" name="Product Name" required>
+                    <option value="" selected disabled>Select a Product ...</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <div class="title">Overall Rating (required)</div>
+                <label class="rating-label">⭐<br /><input id="1star" type="radio" name="rating" required></label>
+                <label class="rating-label">⭐⭐<br /><input id="2star" type="radio" name="rating" required></label>
+                <label class="rating-label">⭐⭐⭐<br /><input id="3star" type="radio" name="rating" required></label>
+                <label class="rating-label">⭐⭐⭐⭐<br /><input id="4star" type="radio" name="rating" required></label>
+                <label class="rating-label">⭐⭐⭐⭐⭐<br /><input id="5star" type="radio" name="rating" required></label>
+            </div>
+
+            <div class="form-group">
+                <label for="install-date">Date of Installation</label>
+                <input type="date" id="install-date" name="installation" required>
+            </div>
+
+            <div class="form-group">
+                <div class="title">Which features did you find useful in this product?</div>
+                <div>(<i>Check all that apply</i>)</div>
+                <label class="checkbox-label">
+                    <input type="checkbox" id="durability" name="Durability" value="yes"> Durability
+                </label>
+                <label class="checkbox-label">
+                    <input type="checkbox" id="ease-use" name="Ease of Use" value="yes"> Ease of Use
+                </label>
+                <label class="checkbox-label">
+                    <input type="checkbox" id="performance" name="Performance" value="yes"> Performance
+                </label>
+                <label class="checkbox-label">
+                    <input type="checkbox" id="design" name="Design" value="yes"> Design
+                </label>
+            </div>
+
+            <div class="form-group">
+                <label for="review-box">Written Review (<i>optional</i>)</label>
+                <textarea id="review-box" name="Written Review"></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="name-input">Your Name (<i>optional</i>)</label>
+                <input type="text" id="name-input" name="your name">
+            </div>
+
+            <div class="form-group">
+                <input type="submit" id="submit-button" value="Leave Review">
+            </div>
         </form>
     </main>
     <footer>
-        <p>
-            ©<span id="currentyear"></span>
-            Jonathas Oliveira - Brazil
-        </p>
-        <p id="lastModified">
-
-        </p>
+        <p>©<span id="currentyear"></span> Jonathas Oliveira - Brazil</p>
+        <p id="lastModified"></p>
     </footer>
 </body>
 </html>
