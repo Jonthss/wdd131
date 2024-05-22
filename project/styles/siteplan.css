@@ -1,0 +1,113 @@
+:root {
+    --primary: #EF5350; 
+    --secondary: #03A9F4; 
+    --text-dark: #333; 
+    --text-light: #666; 
+    --background-light: #F5F5F5; 
+    --background-dark: #FFFFFF; 
+}
+
+body {
+    background-color: var(--background-light);
+    color: var(--text-dark);
+    font-family: "Noto Sans JP", sans-serif; /* Fonte japonesa, se disponível */
+    line-height: 1.6;
+}
+
+header {
+    text-align: center;
+    color: var(--primary);
+    border-bottom: 1px solid var(--text-dark);
+    padding: 1rem 0;
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1, h2, h3 {
+    font-family: "Tenor Sans", sans-serif;
+}
+
+h2 {
+    color: var(--secondary);
+    padding: 1rem 0;
+}
+
+h3 {
+    color: var(--primary);
+}
+
+p, li {
+    margin: 10px 0;
+}
+
+#color-list {
+    list-style: none;
+}
+
+#baby-powder {
+    border: 1px solid var(--text-dark);
+}
+
+#cocoa {
+    color: var(--primary);
+}
+
+#cerulean {
+    color: var(--secondary);
+}
+
+#vanilla {
+    background-color: var(--background-dark);
+    color: var(--text-dark);
+    padding: 10px;
+}
+
+#typo-list {
+    list-style: none;
+    text-align: center;
+}
+
+#typoh1 {
+    color: var(--primary);
+}
+
+.wireframes {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding-left: 20px;
+}
+
+.wireframes h2 {
+    grid-column: 1 / -1;
+    grid-row: 1;
+}
+
+#mobile {
+    grid-column: 1 / span 1;
+    grid-row: 2;
+    padding: 0.5rem;
+}
+
+#desktop {
+    grid-column: 2 / span 1;
+    grid-row: 2;
+    padding: 0.5rem;
+}
+
+#mobile-wireframe,
+#desktop-wireframe {
+    width: 100%;
+    height: auto;
+}
+
+footer {
+    background-color: var(--primary);
+    color: var(--background-light);
+    text-align: center;
+    padding: 1rem 0;
+}
